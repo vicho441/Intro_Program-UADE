@@ -340,4 +340,102 @@ Vamos a ver un ejemplo
 		//	contador += 5;
 		//	cout << contador << "\n";
 		//}
+
+
+		/*
+			ARREGLOS(ARRAYS):
+
+			Es un tipo de collecion que almacena datos. Sus propiedades son:
+			-Debe tener una cantidad concreta de elementos por lo que es finito. 
+			-Ordenado. Cada uno de sus elementos tiene un orden que puede ser identificado por un valor llamado indice que se representa como: [i]
+			-Homogeneo. Un array solo puede contener elementos del mismo tipo
+
+			Estructura:
+			Tipo_de_dato Nombre_identificador[Cantidad de elementos que tendra adentro] = {Elementos guardados};
+
+			Los corchetes sirven para indicar que estamos hablando de un array y no una variable. 
+			Un ejemplo de array seria:
+			int Calificaciones[3] = {5, 23, 10};
+
+			OPERACIONES CON ARRAYS: (Asignacion - Lectura/Escritura - Iteración)
+			-ASIGNACION. Esto se trata de inicializarlo. Esto se hace dandole su tamaño. Hay dos maneras
+			1) Entre corchetes poner su tamaño. No hace falta poner elemenmtos guardados en esta instancia, aunque tranquilamente se puede hacer.
+			int calificaciones[3];
+			2) Poner el valor de los elementos guardados. Esto tambien va a definir el tamaño de la variable.
+			int calificaciones[] = {4, 10, 7};
+			Como ya vimos cada espacio del array esta identificado por su indice, el cual hace referencia a la pocicion del elemento en el array.
+			El Indice arranca en la posicion 0 y de ahi va avanzando de 1 en 1. En el ejemplo: int calificaciones[] = {4, 10, 7}; En la posicion 0 tenemos
+			al 4, en la posicion 1 esta el numero 10 y en la posicion 2 tenemos al 7. Se accede al indice con corchetes. Ejemplo: int calificaciones[1]; 
+			Estaria llamando al numero 1
+			Veamos un ejemplo:
+		*/
+		int calificaciones[] = { 4, 10, 7 };
+		//cout << calificaciones[1];
+
+		/*
+			-Operacion de Lectura/Escritura:
+			la escritura Consiste en guardar valores en un array. Esto se hace indicando la posicion del mismo y luego asignando el valor. 
+			Estructura: NombreArray[Posicion] = Valor asignado;
+			Veamos un ejemplo
+		*/
+		int EjemploArray[5]; //Esto es un array con tamaño de 5 elementos
+		EjemploArray[2] = 29; // Esto asignara el valor 29 al tercer elemnto del array que esta en la pocicion 2.  
+		EjemploArray[0] = 3; //Esto asignara el valor 3 al primer elemento del array que esta en la posocion 0.
+
+		/*
+			La lectura consiste En justamente leer el array. Se accede con el indice [i]
+			Estructura: Nombrevariable[i];
+
+			Veamos un ejemplo:
+		*/
+		//cout << EjemploArray[0];
+		int y = EjemploArray[2] - EjemploArray[0]; //Aca estamos creando una variable Con el resultado de la resta entre dos numeros adentro de un array
+		//cout << y;
+
+		/*
+			ACCESO SECUENCIAL O ITERACION:
+			Esto se basa en iterar con un for la variable para acceder a todos sus valores. (Revisar Contenido arriba sobre for)
+			Veamos un ejemplo:
+		*/
+		int NotasParcial[] = { 4, 6, 8, 1, 9 }; 
+		//for (int i = 0; i < 5; i++) 
+		//{ 
+		//	cout << NotasParcial[i] << "\n";
+		//}
+
+		/*
+			ARREGLOS MULTIDIMENCIONALES:
+			Por mas raro que parezca el nombre es bastante simple si se entendio todo hasta aca.
+			Hasta ahora solo vimos arrays unidimencionales, lo que quiere decir que basicamente es un array con elementos adentro.
+			Un array multidmencional es un array con uno mas arrays adentro. En la teoria que nos dieron nos definieron lo siguiente:
+			"Se pueden definir tablas o matrices como arrays multidimensionales, cuyos elementos se pueden referenciar por dos, tres o más subíndices."
+			Esto suena un poco engorroso y dificil de entender. Vamos a explicarlo en criollo, Pero quedense con esa parte de teoria para cuando entiendan releerla
+
+			ARRAY BIDIMENCIONAL: se usan para hacer tablas.
+			Su estructura es:
+			int tabla[Cantidad de arrays][Tamaño de cada uno de los arrays];
+		*/
+		int tabla[4][3]; 
+		/*
+			Para entender graficamente lo que estamos haciendo en este array de arriba se puede contemplar el siguiente grafico: https://1.bp.blogspot.com/-iKrevuOOSrA/We0Kfxg0K3I/AAAAAAAAAt4/0K_c9ccc6s4ZO2TFvP8ofr9OSHJJbE4DQCLcBGAs/s1600/array%2Bbidi.png
+			Esta imagen es el equivalente visual de este array que acabamos de crear.
+			Para Iterar sobre el array entero y escribirle valores se usa un doble for. Usando la imagen adjuntada, Podemos ver que tenemos filas(Rows) y columnas(Columns)
+			En el array de tabla tenemos 4 filas(rows) y 3 columnas(columns). No olvidemos que las filas son arrays. En el ejemplo de arriba podemos ver
+			que hay 4 filas, Osea 4 arrays, con 3 columnas. osea 3 elementos cada una. 
+		*/
+		int contadorParaSumar = 0;
+		for (int row = 0; row < 4; row++)
+		{
+			
+			for (int column = 0; column < 3; column++)
+			{
+				contadorParaSumar++;
+				tabla[row][column] = contadorParaSumar;
+				//cout << tabla[row][column] << "\n";
+			}
+		}
+
+		/*
+			CADENAS DE CARACTERES: STRINGS
+		*/
 }
