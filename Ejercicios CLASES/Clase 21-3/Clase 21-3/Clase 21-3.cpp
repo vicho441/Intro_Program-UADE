@@ -24,8 +24,23 @@ int main()
 	cin >> DNI;
 
 	cout << "Hola " << nombre << " " << "Su edad es: " << edad << " Y su DNI es: " << DNI;
-	int getch();
-	return 0;
+	
+	
+
+    char Mapa[5][5];
+
+    for (int row = 0; row < 5; row++)
+    {
+
+        for (int column = 0; column < 5; column++)
+        {
+            char item;
+            cout << "Ingrese por consola el nombre de la unidad que desea guardar poniendo un caracter 0 para casillero vacio, T para un bloque de tierra, $ para un cofre y E para un enemigo";
+            cin >> item;
+            Mapa[row][column] = item;
+
+        }
+    }
 }
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
 // Depurar programa: F5 o menú Depurar > Iniciar depuración
