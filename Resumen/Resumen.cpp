@@ -437,5 +437,70 @@ Vamos a ver un ejemplo
 
 		/*
 			CADENAS DE CARACTERES: STRINGS
+
+			Basicamnete como dice su nombre es una cadena de caracteres. Para entender que es un caracter o char, revisar arriba teoria de variables.
+			un char se definiria de tal forma: char NombreVar = 'c';
+			Un string se podria ver como una cadena de char. se escribe: string NombreVar = "casa"
+			Primero hay que notar que el valor de la variable en un string siempre debe estar en "". 
+
+			Operaciones con strings: Asignación o Inicialización - Concatenación - Largo / Tamaño - Input - Acceso a posición - Comparación - Substrings - Búsqueda.
+
+			-Operaciones con Strings: Asignación: Basicamente es inicializar la variable.
+			string nombre = "Alejandro Medici";
+
+			-Concatenación: Se trata de unir dos o mas strings y se hace con un +
+			string firstName = "Alejandro";
+			string lastName = "Medici";
+			string fullName = firstName + " "+ lastName;
+			Si hacemos un cout de full name, se mostrara = "Alejandro Medici"
+
+			-Largo / Tamaño: 
+			Esto se trata de al tener un string, acceder a la informacion sobre su longitud o tamaño de este mismo.
+			veamos un ejemplo:
+		*/
+		string FirstName = "Alejandro";
+		//cout << FirstName.length();
+		//cout << FirstName.size();
+		/*
+			Como podemos ver, en los dos casos el cout nos devolvera "9". Esto es porque al poner .lenght() o .size() luego de una variable de tipo string,
+			accedera a la longitud de la variable y devolvera un numero. 
+
+			-Operaciones con Strings: Input
+			Esto se trata de recibir un string completo por consola.
+			Si nosotros usamos cout para pedir algo, y luego usamos el cin para asignarle el valor a una variable, No nos tomara nada que vaya despues de un espacio,
+			Para Conseguir todo completo, se usa getline(cin, Nombrevariable);
+			Esto va a conseguir que se obtenga la palabra completa. Para entender veamos un ejemplo. 
+		*/
+		string fullName; 
+
+		//cout << "Ingresar nombre completo: "; 
+		//getline(cin, fullName);
+		//cout << "Tu nombre es: " << fullName;
+
+		//cout << "Ingresar nombre completo: ";
+		//cin >> fullName;
+		//cout << "Tu nombre es: " << fullName;
+
+		/*
+			Operaciones con Strings: Acceso a posición
+			Esto consiste en mostrar un char de un string segun su pocicion. 
+			Se usa [], y como todo en programacion, la primera posicion es la 0.
+			Veamos un ejemplo
+		*/
+		//cout << FirstName[0];
+		//cout << FirstName[5];
+
+		/*
+			Operaciones con Strings: Comparación
+		*/
+
+		string word_a = "ABC"; 
+		string word_b = "DEF"; 
+		string word_c = "DEF"; 
+		string word_d = "DEFG";
+
+		/*
+			Operaciones con Strings: Búsqueda
+
 		*/
 }
