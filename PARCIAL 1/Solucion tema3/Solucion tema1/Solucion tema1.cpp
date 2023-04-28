@@ -1,5 +1,7 @@
-// Solucion tema1.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
+
+
+
+// REVISAR PARCIAL TEMA 1 PARA ENTENDER LA TEORIA. ACA HABRAN SOLO RESPUESTAS 
 
 #include <iostream>
 using namespace std;
@@ -12,6 +14,10 @@ void tema3() {
     //string miCadena = 'Uade';
     //string miCadena = "Nicolas Ferrar";
     //string miCadena = '5';
+
+    /*
+        La respuesya correcta es la tercera
+    */
 
     cout << "2 - ¿Cual  es el output si el usuario ingresa 5.7 y luego presiona la tecla enter en su teclado?" << endl;
     {
@@ -26,6 +32,10 @@ void tema3() {
         // 8.5
         // x
         // Ninguna de las anteriores
+
+        /*
+            La respuesta es ninguna de las anteriores ya que la respuesta seria 13.
+        */
     }
 
     cout << "3 - ¿Cual es el valor de la variable x?" << endl;
@@ -37,6 +47,10 @@ void tema3() {
         // 0
         // 59
         // Ninguna de las anteriores
+
+        /*
+            La respuesta es ninguna de las anteriores ya que seia 50.
+        */
     }
 
     cout << "4 - ¿Cual es el valor de la variable x?" << endl;
@@ -48,6 +62,10 @@ void tema3() {
         // 10
         // El valor es invalido
         // Hay un error en la sintaxis
+
+        /*
+            La respusya es 10
+        */
     }
 
 
@@ -63,6 +81,17 @@ void tema3() {
         // 3 
         // 4
         // 5
+
+        /*
+            Primero hay que entender que este ejercicio da error. Al poner int y dos veces estariamos haciendo algo llamado inicializacion multiple. 
+            Eso no se puede. Para que sea correcto el codigo deberia quedar asi: 
+              int y = 1;
+              y = y * 2;
+              int z = y--;
+              cout << z;
+
+              ahora si, con el codigo correcto, la respuesta es 2
+        */
     }
 
     cout << "6 - ¿Cual es el valor de la variable a?" << endl;
@@ -74,6 +103,10 @@ void tema3() {
         // 2 
         // 3
         // Ninguna de las anteriores
+
+        /*
+            La respuesta es 3
+        */
     }
 
     cout << "7 - ¿Cual de las siguientes palabras NO puede ni debe ser usada como nombre de variable?" << endl;
@@ -82,6 +115,10 @@ void tema3() {
         //int char = 1;
         //int default = 34;
         // Ninguna de las anteriores
+
+        /*
+            La respuesta es Ninguna de las anteriores
+        */
     }
 
     cout << "8 - ¿Declare una cadena de caracteres?" << endl;
@@ -99,6 +136,9 @@ void tema3() {
         // 899
         // Ninguna de las anteriores
         cout << endl;
+        /*
+            La respuesta es 979 por lo que seria niguna de las anteriores
+        */
     }
 
     cout << "10 - ¿Cual es el valor final de la variable k?" << endl;
@@ -120,6 +160,10 @@ void tema3() {
 
         k = i + j + k;
         cout << k;
+
+        /*
+            K vale 0
+        */
     }
 
     cout << "11 - Se debe generar de manera manual el mapa para un mod de Minecraft a partir de un tablero de 50x50" << endl;
@@ -132,6 +176,10 @@ void tema3() {
         // Una vez completada la carga mostrar todos los valores almacenados por pantalla
         // Extra: en caso de que el usuario introduzca un valor que no sea valido debera estar contemplado por el programa y tomar una decision en base a eso.
 
+
+        /*
+            Este esta terminado en tema1 Parcial
+        */
     }
 
 }
